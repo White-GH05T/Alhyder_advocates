@@ -1,0 +1,100 @@
+.body-top {
+    background: url('../img/Bk\ Image5\ 1.png') 100% no-repeat;
+    background-size: cover;
+}
+
+.body-middle {
+    margin: 100px 136px 100px;
+}
+
+.body-middle .text-primary span {
+    width: 32px;
+    background-color: #CC9F53;
+    height: 1px;
+    display: block;
+    margin: 0 10px;
+}
+
+.body-middle .box {
+    border: 1px solid #D5D5D5;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    max-width: 373px;
+    max-height: 373px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 34px 34px 8px;
+}
+
+.body-middle .box img {
+    margin: 0 0 36px 0;
+}
+
+.body-middle .box p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #4D4D4D;
+}
+
+.body-middle .box h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 48px;
+    color: #4D4D4D;
+}
+
+.body-middle h3 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    width: 70%;
+    margin: 0 auto;
+    color: #4D4D4D;
+}
+
+.body-middle-2 {}
+
+.body-middle-2 .img-responsive img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.body-middle-2 .message {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px 40px 0;
+    height: 100%;
+    gap: 1%;
+}
+
+.body-middle-2 .message h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.body-middle-2 .message p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    width: 90%;
+}
+
+.body-middle-2 .message img {
+    max-width: 109px;
+    width: 100%;
+}
+
+.body-middle-2 .message span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 48px;
+    display: block;
+}
