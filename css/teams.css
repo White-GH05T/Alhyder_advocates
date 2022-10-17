@@ -1,0 +1,61 @@
+.body-top {
+    background: url('../img/Bk\ Image5\ 1.png') 100% no-repeat;
+    background-size: cover;
+}
+
+.body-middle {
+    padding-top: 42px;
+    padding-bottom: 30px;
+    background-color: #f5f5f5;
+}
+
+.body-middle p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #4A4A4A;
+}
+
+.body-middle-2 {
+    background-color: #f5f5f5;
+    padding: 30px 0 120px;
+}
+
+.body-middle-2 .teamMemberBox {
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 2px 2px;
+}
+
+.body-middle-2 .teamMemberBox:hover {
+    box-shadow: -9px 11px 4px 0px rgb(0 0 0 / 17%);
+    transition: box-shadow 0.2s linear;}
+
+.body-middle-2 .teamMemberBox:hover .position {
+    border-bottom: 1px solid #CC9F53;
+}
+
+.body-middle-2 .teamMemberBox img {
+    max-width: 387px;
+    max-height: 369px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.body-middle-2 .teamMemberBox .name {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 24px 0 12px;
+    padding-left: 25px;
+}
+
+.body-middle-2 .teamMemberBox .position {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 31px;
+    padding-left: 25px;
+}
