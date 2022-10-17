@@ -43,25 +43,25 @@
 				<div class="collapse navbar-collapse px-xl-5" id="navbarNavDropdown">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item mx-lg-3">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
+							<a class="nav-link active" aria-current="page" href="home.html">Home</a>
 						</li>
 						<li class="nav-item mx-lg-3">
-							<a class="nav-link" href="#">About Us</a>
+							<a class="nav-link" href="aboutus.html">About Us</a>
 						</li>
 						<li class="nav-item mx-lg-3">
-							<a class="nav-link" href="#">Specialization Area</a>
+							<a class="nav-link" href="specialization.html">Specialization Area</a>
 						</li>
 						<li class="nav-item mx-lg-3">
-							<a class="nav-link" href="#">General Legal Serice</a>
+							<a class="nav-link" href="legalService.html">General Legal Serice</a>
 						</li>
 						<li class="nav-item mx-lg-3">
-							<a class="nav-link" href="#">Our Team</a>
+							<a class="nav-link" href="ourTeams.html">Our Team</a>
 						</li>
 						<li class="nav-item mx-lg-3">
-							<a class="nav-link" href="#">Blog</a>
+							<a class="nav-link" href="blog.html">Blog</a>
 						</li>
 						<li class="nav-item mx-lg-3">
-							<a class="nav-link" href="#">Contact Us</a>
+							<a class="nav-link" href="contact.html">Contact Us</a>
 						</li>
 					</ul>
 				</div>
@@ -73,7 +73,7 @@
 			<div class="text-center d-flex justify-content-center flex-column align-items-center">
 				<h1>Al Hyder Advocate & Legal Consultants</h1>
 				<h2>Reputation. Respect. Result.</h2>
-				<button type="button" class="btn-primary btn">Free Consultation</button>
+				<button type="button" class="btn-primary btn"  data-bs-toggle="modal" data-bs-target="#consultation">Free Consultation</button>
 			</div>
 		</div>
 		<div class="body-middle">
@@ -246,17 +246,62 @@
 						<div class="row">
 							<div class="col-6 form-group">
 								<label for="fullName" class="form-label">Full Name</label>
-								<input type="text" name="fullName" id="fullName" placeholder="Enter Full Name"
+								<input type="text" name="fullName" id="fullName" required placeholder="Enter Full Name"
 									class="form-control">
 							</div>
 							<div class="col-6 form-group">
 								<label for="email" class="form-label">Email</label>
-								<input type="email" name="email" id="email" placeholder="Enter Email"
+								<input type="email" name="email" id="email" required placeholder="Enter Email"
 									class="form-control">
 							</div>
 							<div class="col-6 form-group">
 								<label for="mobile" class="form-label">Mobile</label>
-								<input type="tel" name="mobile" id="mobile" placeholder="Enter Mobile"
+								<input type="tel" name="mobile" id="mobile" required placeholder="Enter Mobile"
+									class="form-control">
+							</div>
+							<div class="col-12 form-group">
+								<label for="message" class="form-label">Message</label>
+								<textarea name="message" rows="4" id="message" required placeholder="Enter Message"
+									class="form-control"></textarea>
+							</div>
+						</div>
+						<button class="btn btn-primary text-center mx-auto d-block">Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Consultation Modal -->
+	<div class="modal fade" id="consultation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+		aria-labelledby="consultationLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered ">
+			<div class="modal-content">
+				<div class="modal-header border-0">
+					<h5 class="modal-title text-center text-primary w-100" id="consultationLabel">Free Consultation Form</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form action="">
+						<div class="g-3 mb-3 row">
+							<div class="col-12 form-group">
+								<label for="fullName" class="form-label">Full Name</label>
+								<input type="text" name="fullName" id="fullName" placeholder="Enter Full Name" 	required
+									class="form-control">
+							</div>
+							<div class="col-12 form-group">
+								<label for="email" class="form-label">Email</label>
+								<input type="email" name="email" id="email" placeholder="Enter Email" 	required
+									class="form-control">
+							</div>
+							<div class="col-12 form-group">
+								<label for="mobile" class="form-label">Mobile</label>
+								<input type="tel" name="mobile" id="mobile" placeholder="Enter Mobile" 	required
+									class="form-control">
+							</div>
+							<div class="col-12 form-group">
+								<label for="subject" class="form-label">Subject</label>
+								<input type="text" name="subject" id="subject" placeholder="Enter Subject" required
 									class="form-control">
 							</div>
 							<div class="col-12 form-group">
@@ -265,7 +310,7 @@
 									class="form-control"></textarea>
 							</div>
 						</div>
-						<button class="btn btn-primary text-center mx-auto d-block">Send</button>
+						<button class="btn btn-primary text-center mx-auto w-50 p-3 d-block">Send</button>
 					</form>
 				</div>
 			</div>
