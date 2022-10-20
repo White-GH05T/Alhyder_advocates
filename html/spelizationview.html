@@ -11,6 +11,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="../js/jquery.js"></script>
 </head>
 
@@ -66,71 +67,52 @@
                         </li>
                     </ul>
                 </div>
-            </div>
         </nav>
     </div>
     <div class="container-fluid">
-        <div class="body-top">
-            <div class="text-center d-flex justify-content-center flex-column align-items-center">
-                <h1 class="text-primary text-light d-flex justify-content-center align-items-center"><span
-                        class="bg-light"></span> OUR SPECIALITIES
-                    <span class="bg-light"></span>
-                </h1>
-            </div>
-        </div>
         <div class="px-md-5 body-middle-2">
             <div class="row pt-4 pb-5">
                 <div class="col-xl-3 col-lg-4 col-md-4">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="Healthcare-tab" data-idNum="0" data-bs-toggle="tab"
-                                data-bs-target="#Healthcare-tab-pane" type="button" role="tab"
-                                aria-controls="Healthcare-tab-pane" aria-selected="true">Healthcare</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="Hospitality-tab" data-idNum="1" data-bs-toggle="tab"
-                                data-bs-target="#Hospitality-tab-pane" type="button" role="tab"
-                                aria-controls="Hospitality-tab-pane" aria-selected="false">Hospitality</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="Beverages-tab" data-idNum="2" data-bs-toggle="tab"
-                                data-bs-target="#Beverages-tab-pane" type="button" role="tab"
-                                aria-controls="Beverages-tab-pane" aria-selected="false">Food & Beverages</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="Education-tab" data-idNum="3" data-bs-toggle="tab"
-                                data-bs-target="#Education-tab-pane" type="button" role="tab"
-                                aria-controls="Education-tab-pane" aria-selected="false">Education</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="Retail-tab" data-idNum="4" data-bs-toggle="tab"
-                                data-bs-target="#Retail-tab-pane" type="button" role="tab"
-                                aria-controls="Retail-tab-pane" aria-selected="true">Retail</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="Infrastructure-tab" data-idNum="5" data-bs-toggle="tab"
-                                data-bs-target="#Infrastructure-tab-pane" type="button" role="tab"
-                                aria-controls="Infrastructure-tab-pane" aria-selected="false">Infrastructure</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="LogisticsShipping-tab" data-idNum="6" data-bs-toggle="tab"
-                                data-bs-target="#LogisticsShipping-tab-pane" type="button" role="tab"
-                                aria-controls="LogisticsShipping-tab-pane" aria-selected="false">Logistics &
-                                Shipping</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="EnergyMining-tab" data-idNum="7" data-bs-toggle="tab"
-                                data-bs-target="#EnergyMining-tab-pane" type="button" role="tab"
-                                aria-controls="EnergyMining-tab-pane" aria-selected="false">Energy & Mining</button>
-                        </li>
-                    </ul>
+                    <div class="menu-practice-areas-container">
+                        <ul id="menu-practice-areas" class="gdlr-core-custom-menu-widget gdlr-core-menu-style-list">
+                            <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item">
+                                <a data-target="#Healthcare-tab-pane" data-idNum="0"> Healthcare</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a data-target="#Hospitality-tab-pane" data-idNum="1"> Hospitality</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a data-target="#Beverages-tab-pane" data-idNum="2"> Food & Beverages</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a data-target="#Education-tab-pane" data-idNum="3">Education</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a data-target="#Retail-tab-pane" data-idNum="4"> Retail</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a data-target="#Infrastructure-tab-pane" data-idNum="5"> Infrastructure</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a data-target="#LogisticsShipping-tab-pane" data-idNum="6"> Logistics & Shipping</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a data-target="#EnergyMining-tab-pane" data-idNum="7"> Energy & Mining</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-xl-9 col-lg-8 col-md-8">
                     <div class="tab-content mb-5 pt-1" id="myTabContent">
                         <div class="tab-pane fade show active" id="Healthcare-tab-pane" role="tabpanel"
                             aria-labelledby="home-tab" tabindex="0">
                             <div class="row">
+                                <div class="col-xl-12 col-lg-12 mb-5">
+                                    <img class="img-fluid" src="../img/Specialized Practicing Area/Medical.jpg" alt="">
+                                </div>
                                 <div class="col-xl-12 col-lg-12">
+                                    <h2 class="text-primary mb-3 ">Healthcare</h2>
                                     <p>
                                         The healthcare industry is one of the highly regulated industries regionally
                                         and
@@ -165,7 +147,12 @@
                         <div class="tab-pane fade" id="Hospitality-tab-pane" role="tabpanel"
                             aria-labelledby="profile-tab" tabindex="0">
                             <div class="row">
+                                <div class="col-xl-12 col-lg-12 mb-5">
+                                    <img class="img-fluid" src="../img/Specialized Practicing Area/Hospitality.jpg"
+                                        alt="">
+                                </div>
                                 <div class="col-xl-12 col-lg-12">
+                                    <h2 class="text-primary mb-3 ">Hospitality</h2>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore et dolore magna aliqua. Amet nulla facilisi morbi tempus
@@ -186,7 +173,12 @@
                         <div class="tab-pane fade" id="Beverages-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
                             tabindex="0">
                             <div class="row">
+                                <div class="col-xl-12 col-lg-12 mb-5">
+                                    <img class="img-fluid" src="../img/Specialized Practicing Area/Food & Beverage.jpg"
+                                        alt="">
+                                </div>
                                 <div class="col-xl-12 col-lg-12">
+                                    <h2 class="text-primary mb-3 ">Food & Beverages</h2>
                                     <p>
                                         We advise companies operating in the F&B sector on industrial, commercial,
                                         retail,
@@ -222,7 +214,12 @@
                         <div class="tab-pane fade" id="Education-tab-pane" role="tabpanel"
                             aria-labelledby="disabled-tab" tabindex="0">
                             <div class="row">
+                                <div class="col-xl-12 col-lg-12 mb-5">
+                                    <img class="img-fluid" src="../img/Specialized Practicing Area/education.jpg"
+                                        alt="">
+                                </div>
                                 <div class="col-xl-12 col-lg-12">
+                                    <h2 class="text-primary mb-3 ">Education</h2>
                                     <p>
                                         Our clients include education companies, academic institutions, investors
                                         and
@@ -243,7 +240,11 @@
                         <div class="tab-pane" id="Retail-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                             tabindex="0">
                             <div class="row">
+                                <div class="col-xl-12 col-lg-12 mb-5">
+                                    <img class="img-fluid" src="../img/Specialized Practicing Area/Retail.jpg" alt="">
+                                </div>
                                 <div class="col-xl-12 col-lg-12">
+                                    <h2 class="text-primary mb-3 ">Retail</h2>
                                     <p>
                                         Consumer Goods and the Retail Sector team is recognized for advising many of
                                         the
@@ -273,7 +274,12 @@
                         <div class="tab-pane fade" id="Infrastructure-tab-pane" role="tabpanel"
                             aria-labelledby="profile-tab" tabindex="0">
                             <div class="row">
+                                <div class="col-xl-12 col-lg-12 mb-5">
+                                    <img class="img-fluid" src="../img/Specialized Practicing Area/Infrastructure.jpg"
+                                        alt="">
+                                </div>
                                 <div class="col-xl-12 col-lg-12">
+                                    <h2 class="text-primary mb-3 ">Infrastructure</h2>
                                     <p>
                                         We advise on all aspects of the sector, including regulations, M&A,
                                         financing,
@@ -287,7 +293,12 @@
                         <div class="tab-pane fade" id="LogisticsShipping-tab-pane" role="tabpanel"
                             aria-labelledby="contact-tab" tabindex="0">
                             <div class="row">
+                                <div class="col-xl-12 col-lg-12 mb-5">
+                                    <img class="img-fluid" src="../img/Specialized Practicing Area/Logistics.jpg"
+                                        alt="">
+                                </div>
                                 <div class="col-xl-12 col-lg-12">
+                                    <h2 class="text-primary mb-3 ">Logistics & Shipping</h2>
                                     <p>
                                         Our team has advised a range of regional and international clients,
                                         including P&I
@@ -311,7 +322,12 @@
                         <div class="tab-pane fade" id="EnergyMining-tab-pane" role="tabpanel"
                             aria-labelledby="disabled-tab" tabindex="0">
                             <div class="row">
+                                <div class="col-xl-12 col-lg-12 mb-5">
+                                    <img class="img-fluid"
+                                        src="../img/Specialized Practicing Area/Energy and Mining.jpg" alt="">
+                                </div>
                                 <div class="col-xl-12 col-lg-12">
+                                    <h2 class="text-primary mb-3 ">Energy & Mining</h2>
                                     <p>
                                         We advise regulators, the regulated, investors and other industry
                                         participants
@@ -420,6 +436,7 @@
         }
         return false;
     };
+
     var page = parseInt(getUrlParameter('page'));
     var imgs = ["../img/Specialized Practicing Area/Medical.jpg",
         "../img/Specialized Practicing Area/Hospitality.jpg",
@@ -438,20 +455,26 @@
         "Infrastructure",
         "Logistics & Shipping",
         "Energy & Mining",];
+    $('#menu-practice-areas .menu-item a').on('click', function () {
+        let tempId = $(this).attr('data-target');
+        let currentId = $(this).parent();
+        $('.tab-content .tab-pane').removeClass('show active');
+        $(tempId).addClass('show active');
+
+        $('#menu-practice-areas .menu-item').removeClass('current-menu-item current_page_item');
+        $(currentId).addClass('current-menu-item current_page_item');
+        let id = $(this).attr('data-idNum');
+        $('.body-img').attr('src', imgs[id]);
+        $('h1').text(names[id])
+
+    })
+
     if (page) {
-        $('#myTab').find('li:nth-child(' + page + ') button').click();
-        $('.body-top').css('background', 'url("' + imgs[page - 1] + '") 100% no-repeat');
-        $('h1').text(names[page - 1])
+        $('#menu-practice-areas').find('li:nth-child(' + page + ') a').click();
     }
     else {
-        $('#myTab').find('li:nth-child(1) button').click()
+        $('#menu-practice-areas').find('li:nth-child(1) a').click()
     }
-
-    $('#myTab .nav-item .nav-link').on('click', function () {
-        let id = $(this).attr('data-idNum');
-        $('.body-top').css('background', 'url("' + imgs[id] + '") 100% no-repeat');
-        $('h1').text(names[id])
-    })
 </script>
 
 </html>
