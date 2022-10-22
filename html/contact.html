@@ -32,51 +32,79 @@
 				<img src="../img/icons/twitter.png" alt="">
 			</a>
 		</div>
-		<nav class="navbar navbar-expand-lg px-xl-5 ps-4">
-			<div class="header-middle container-fluid	">
-				<a class="navbar-brand px-xxl-5" href="#"><img src="../img/Logo.png" class="logo-img" alt="logo"></a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-					data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+		<nav class="navbar navbar-expand-lg p-0">
+			<div class="header-middle container	">
+				<a class="navbar-brand" href="#"><img src="../img/Logo.png" class="logo-img" alt="logo"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false"
 					aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse px-xl-5" id="navbarNavDropdown">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item mx-lg-3">
+				<div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+					<ul class="justify-content-between mb-2 mb-lg-0 ms-md-5 navbar-nav w-100">
+						<li class="nav-item">
 							<a class="nav-link" aria-current="page" href="home.html">Home</a>
 						</li>
-						<li class="nav-item mx-lg-3">
+						<li class="nav-item">
 							<a class="nav-link" href="aboutus.html">About Us</a>
 						</li>
-						<li class="nav-item mx-lg-3">
+						<li class="nav-item">
 							<a class="nav-link" href="specialization.html">Specialization Area</a>
 						</li>
-						<li class="nav-item mx-lg-3">
+						<li class="nav-item">
 							<a class="nav-link" href="legalService.html">General Legal Serice</a>
 						</li>
-						<li class="nav-item mx-lg-3">
+						<li class="nav-item">
 							<a class="nav-link" href="ourTeams.html">Our Team</a>
 						</li>
-						<li class="nav-item mx-lg-3">
+						<li class="nav-item">
 							<a class="nav-link" href="blog.html">Blog</a>
 						</li>
-						<li class="nav-item mx-lg-3">
+						<li class="nav-item">
 							<a class="nav-link active" href="contact.html">Contact Us</a>
 						</li>
 					</ul>
+				</div>
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+					aria-labelledby="offcanvasExampleLabel">
+					<div class="offcanvas-body">
+						<ul class="justify-content-between mb-2 mb-lg-0 navbar-nav w-100">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="home.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="aboutus.html">About Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="specialization.html">Specialization Area</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="legalService.html">General Legal Serice</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="ourTeams.html">Our Team</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="blog.html">Blog</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="contact.html">Contact Us</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</nav>
 	</div>
 	<div class="container-fluid contact">
-		<div class="body-top">
+		<div class="body-top contact">
 			<div class="text-center d-flex justify-content-center flex-column align-items-center">
 				<h1 class="text-white d-flex justify-content-center align-items-center">Contact Us</h1>
 				<h2>We are here to help and answer you might have we look forward to hear from you.</h2>
 			</div>
 		</div>
 
-		<div class="body-middle bg-white">
+		<div class="body-middle bg-white desktop">
 			<div class="row justify-content-center">
 				<div class="col-6 mx-l">
 					<h4>How to find us</h4>
@@ -86,7 +114,7 @@
 					<div class="d-flex flex-column">
 						<div class="d-flex flex-row align-items-start">
 							<img class="bg-primary rounded-circle p-1" src="../img//icons/map-pin.png" alt="">
-							<span># 102, Mohamed Bin Business Tower <br>Deira City Center, Dubai, UAE.</span>
+							<span>Office B-103 Centurion Tower <br>Port Saeed 2, Dubai-UAE. </span>
 						</div>
 						<div class="d-flex flex-row align-items-start">
 							<img class="bg-primary rounded-circle p-1" src="../img//icons/call.png" alt="">
@@ -94,7 +122,7 @@
 						</div>
 						<div class="d-flex flex-row align-items-start">
 							<img class="bg-primary rounded-circle p-1" src="../img//icons/email.png" alt="">
-							<span>Info@alhyderadocates.com</span>
+							<span>enquiry@alhyderadocates.com</span>
 						</div>
 						<div class="d-flex flex-row align-items-start">
 							<img class="bg-primary rounded-circle p-1" src="../img//icons/clock.png" alt="">
@@ -132,63 +160,219 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="body-middle-3 mobile">
+				<div class="row justify-content-center p-5">
+				<div class="col-12 mx-l">
+					<h4 class="text-center">How to find us</h4>
+					<p class="text-center">If you have any questions, just fill in the contact form, and we will answer
+						you shortly. If you
+						are living nearby, come visit our office.</p>
+				</div>
+				<button class="btn btn-primary m-auto w-50 my-5 py-3" data-bs-toggle="modal"
+					data-bs-target="#contactForm">
+					Contact Form
+				</button>
+				<div class="col-12">
+					<h4 class="text-center">Office Location</h4>
+					<div class="d-flex flex-column">
+						<div class="d-flex flex-row align-items-center w-100 gap-4 text-left">
+							<img class="bg-primary rounded-circle p-1" height="50" src="../img//icons/map-pin.png"
+								alt="">
+							<p>Office B-103 Centurion Tower <br>Port Saeed 2, Dubai-UAE. </p>
+						</div>
+						<div class="d-flex flex-row align-items-center w-100 gap-4 text-left">
+							<img class="bg-primary rounded-circle p-1" height="50" src="../img//icons/call.png" alt="">
+							<p>+971 4 123 4567</p>
+						</div>
+						<div class="d-flex flex-row align-items-center w-100 gap-4 text-left">
+							<img class="bg-primary rounded-circle p-1" height="50" src="../img//icons/email.png" alt="">
+							<p>enquiry@alhyderadocates.com</p>
+						</div>
+						<div class="d-flex flex-row align-items-center w-100 gap-4 text-left border-0">
+							<img class="bg-primary rounded-circle p-1" height="50" src="../img//icons/clock.png" alt="">
+							<p>Business Hours <br>Sun - Thu 9am - 5 pm</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="modal fade" id="contactForm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+		aria-labelledby="consultationLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered ">
+			<div class="modal-content">
+				<div class="modal-header border-0">
+					<h5 class="modal-title text-center text-primary w-100" id="consultationLabel">Contact Form
+					</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form action="">
+						<div class="g-3 mb-3 row">
+							<div class="col-12 form-group">
+								<label for="fullName" class="form-label">Full Name</label>
+								<input type="text" name="fullName" id="fullName" placeholder="Enter Full Name" required
+									class="form-control">
+							</div>
+							<div class="col-12 form-group">
+								<label for="email" class="form-label">Email</label>
+								<input type="email" name="email" id="email" placeholder="Enter Email" required
+									class="form-control">
+							</div>
+							<div class="col-12 form-group">
+								<label for="mobile" class="form-label">Mobile</label>
+								<input type="tel" name="mobile" id="mobile" placeholder="Enter Mobile" required
+									class="form-control">
+							</div>
+							<div class="col-12 form-group">
+								<label for="subject" class="form-label">Subject</label>
+								<input type="text" name="subject" id="subject" placeholder="Enter Subject" required
+									class="form-control">
+							</div>
+							<div class="col-12 form-group">
+								<label for="message" class="form-label">Message</label>
+								<textarea name="message" rows="4" id="message" placeholder="Enter Message"
+									class="form-control"></textarea>
+							</div>
+						</div>
+						<button class="btn btn-primary text-center mx-auto w-50 p-3 d-block">Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 	</div>
 </body>
-<footer>
-	<div class="bg-info">
-		<div class="foot">
-			<div class="foot-1">
-				<img src="../img/logo_white.png" width="100%" alt="">
-				<p>We aim to lead in each practice and area of law we work in.</p>
-			</div>
-			<div class="foot-2">
-				<div class="f1">
+<footer class="bg-info">
+	<div class="p-5 pb-0 desktop">
+		<footer class="py-5  pb-0">
+			<div class="row">
+				<div class="col-3 pe-5">
+					<img src="../img/logo_white.png" width="100%" class="pb-4" alt="">
+					<p>We aim to lead in each practice and area of law we work in.</p>
+				</div>
+				<div class="col-2 pe-5">
 					<h5>Menu</h5>
-					<ul>
+					<ul class="nav flex-column">
 						<li>Home </li>
 						<li>About Us</li>
 						<li>Our Team</li>
 						<li>General Legal Service</li>
 					</ul>
 				</div>
-				<div class="f2">
+
+				<div class="col-4 pe-5">
 					<h5>Specilization Area</h5>
 					<div class="row">
-						<ul class="col-6">
-							<li>Healthcare </li>
-							<li>Food & Beverage</li>
-							<li>Retail</li>
-							<li>Logistics &<br> Shipping</li>
-						</ul>
-						<ul class="col-6">
-							<li>Hospitality </li>
-							<li>Education</li>
-							<li>Infrastructure</li>
-							<li>Energy &<br> Mining</li>
-						</ul>
+						<div class="col-6">
+							<ul class="nav flex-column">
+								<li>Healthcare </li>
+								<li>Food & Beverage</li>
+								<li>Retail</li>
+								<li>Logistics &<br> Shipping</li>
+							</ul>
+						</div>
+						<div class="col-6">
+							<ul class="nav flex-column">
+								<li>Hospitality </li>
+								<li>Education</li>
+								<li>Infrastructure</li>
+								<li>Energy &<br> Mining</li>
+							</ul>
+						</div>
 					</div>
 				</div>
+
+				<div class="col-3">
+					<form action="" id="footerForm">
+						<p class="pt-3">Subscribe to our newsletter and be the first to know about our legal updates</p>
+						<div class="d-flex w-100 gap-2">
+							<input type="email" class="form-control" id="subscribeEmail" name="subscribeEmail"
+								placeholder="Email Address">
+							<button class="btn bg-white text-dark btn-lg" type="button">Subscribe</button>
+						</div>
+					</form>
+				</div>
 			</div>
-			<div class="foot-3">
-				<p>Subscribe to our newsletter and be the first to know about our legal updates</p>
-				<form action="" id="footerForm">
-					<div class="form-group">
-						<input type="email" name="subscribeEmail" id="subscribeEmail" placeholder="Email Address"
-							class="form-control">
+
+			<div class="d-flex justify-content-between py-4  pb-0 border-top">
+				<p>Copyright © 2020. All rights reserved.</p>
+				<ul class="list-unstyled d-flex">
+					<li class="ms-3"><a class="link-dark" href="#"><img src="../img/icons/Facebook_w.png" class="me-3"
+								alt=""></a></li>
+					<li class="ms-3"><a class="link-dark" href="#"><img src="../img/icons/Instagram_w.png" class="me-3"
+								alt=""></a></li>
+					<li class="ms-3"><a class="link-dark" href="#"><img src="../img/icons/Twitter_w.png" alt=""></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	<div class="p-5 pb-0 mobile">
+		<footer>
+			<div class="row justify-content-center align-items-center px-5">
+				<div class="col-8">
+					<img src="../img/logo_white.png" width="100%" class="pb-4" alt="">
+					<p class="text-center">We aim to lead in each practice and area of law we work in.</p>
+				</div>
+				<div class="col-10">
+					<form action="" id="footerForm">
+						<p class="text-center">Subscribe to our newsletter and be the first to know about our legal
+							updates</p>
+						<div class="d-flex w-100 gap-2">
+							<input type="email" class="form-control" id="subscribeEmail" name="subscribeEmail"
+								placeholder="Email Address">
+							<button class="btn bg-white text-dark btn-lg" type="button">Subscribe</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-4">
+					<h5>Menu</h5>
+					<ul class="nav flex-column">
+						<li>Home </li>
+						<li>About Us</li>
+						<li>Our Team</li>
+						<li>General Legal Service</li>
+					</ul>
+				</div>
+
+				<div class="col-8">
+					<h5>Specilization Area</h5>
+					<div class="row">
+						<div class="col-6">
+							<ul class="nav flex-column">
+								<li>Healthcare </li>
+								<li>Food & Beverage</li>
+								<li>Retail</li>
+								<li>Logistics &<br> Shipping</li>
+							</ul>
+						</div>
+						<div class="col-6">
+							<ul class="nav flex-column">
+								<li>Hospitality </li>
+								<li>Education</li>
+								<li>Infrastructure</li>
+								<li>Energy &<br> Mining</li>
+							</ul>
+						</div>
 					</div>
-					<button class="btn bg-white text-dark">subscribe</button>
-				</form>
+				</div>
+
+
 			</div>
-		</div>
-		<hr>
-		<div class="d-flex justify-content-around ">
-			<p>Copyright © 2020. All rights reserved.</p>
-			<div class="d-flex align-items-baseline">
-				<a href=""><img src="../img/icons/Facebook_w.png" class="me-3" alt=""> </a>
-				<a href=""><img src="../img/icons/Instagram_w.png" class="me-3" alt=""> </a>
-				<a href=""><img src="../img/icons/Twitter_w.png" alt=""> </a>
+
+			<div class="d-flex justify-content-between py-4  border-top">
+				<p>Copyright © 2020. All rights reserved.</p>
+				<ul class="list-unstyled d-flex">
+					<li class="ms-3"><a class="link-dark" href="#"><img src="../img/icons/Facebook_w.png" class="me-3"
+								alt=""></a></li>
+					<li class="ms-3"><a class="link-dark" href="#"><img src="../img/icons/Instagram_w.png" class="me-3"
+								alt=""></a></li>
+					<li class="ms-3"><a class="link-dark" href="#"><img src="../img/icons/Twitter_w.png" alt=""></a>
+					</li>
+				</ul>
 			</div>
-		</div>
+		</footer>
 	</div>
 </footer>
 
