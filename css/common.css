@@ -127,7 +127,7 @@ footer ul li {
     line-height: 17px;
 }
 
-figure.ceo {
+figure.member {
     width: 100%;
     height: 500px;
 }
@@ -424,7 +424,7 @@ footer .bg-info .foot .foot-3 form button {
     figure {
         height: 250px !important;
     }
-    .teamMemberBox figure{
+    .teamMemberBox figure, figure.member{
         height: auto !important;
     }
 
